@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener { 
             if (!num1.text.toString().isDigitsOnly() || num1.text.toString().length!=2 || num1.text.toString() == "" 
                 || !num2.text.toString().isDigitsOnly() || num2.text.toString().length!=2 || num2.text.toString() == ""
-                || abc.text.toString().contains("[0-9]".toRegex())|| abc.text.toString().length!=3 || abc.text.toString()=="") {
+                || abc.text.toString().length!=3 || abc.text.toString()=="") {
                 Toast.makeText(this, "მანქანის ნომერი არასწორია", Toast.LENGTH_SHORT).show()
                 
             }else if (!piradi.text.toString().isDigitsOnly() || piradi.text.toString().length!=11 || piradi.text.toString()=="") {
